@@ -4,7 +4,7 @@
 
 // process.traceDeprecation = true;
 const CARD_NAME = "midea-humidifier-card";
-const version  = "1.0.7";
+const version  = "1.0.9";
 
 console.info(
   `%c ${CARD_NAME} %c ${version}`,

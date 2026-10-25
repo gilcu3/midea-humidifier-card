@@ -8,7 +8,9 @@ humidifier card was kinda lacking alot, so i made this card specifically for tha
 
 ## Changelogs
 
-*v1.0.7* - Latest current version - Fixed fan mode name change in homeassistant-midea-air-appliances-lan v0.6.0
+*v1.0.9* - Latest current version - Bundled round-slider, which Home Assistant 2026.10 no longer provides (the humidity ring was missing)
+
+*v1.0.7* - Fixed fan mode name change in homeassistant-midea-air-appliances-lan v0.6.0
 
 *v1.0.6* - Updated readme.md
 
@@ -29,14 +31,14 @@ humidifier card was kinda lacking alot, so i made this card specifically for tha
 1. Go to the section frontend.
 2. Click on the 3 dots in the top right corner.
 3. Select "Custom repositories"
-4. Add the [URL](https://github.com/sicknesz/midea-humidifier-card/) to the repository.
+4. Add the [URL](https://github.com/gilcu3/midea-humidifier-card/) to the repository.
 5. Select the correct category (lovelace)
 6. Click the "ADD" button.
 7. Install
 
 ### Manual install
 
-1. Download and copy `midea-humidifier-card.js` from the [my repo](https://raw.githubusercontent.com/sicknesz/midea-inventor-card/master/dist/midea-humidifier-card.js) into your `config/www` directory.
+1. Download and copy `midea-humidifier-card.js` from the [my repo](https://raw.githubusercontent.com/gilcu3/midea-humidifier-card/personal/dist/midea-humidifier-card.js) into your `config/www` directory.
 
 2. Add the resource reference as decribed below.
 
@@ -47,7 +49,7 @@ humidifier card was kinda lacking alot, so i made this card specifically for tha
 2. Grab `midea-humidifier-card.js`:
 
   ```
-  wget https://raw.githubusercontent.com/sicknesz/midea-inventor-card/master/dist/midea-humidifier-card.js
+  wget https://raw.githubusercontent.com/gilcu3/midea-humidifier-card/personal/dist/midea-humidifier-card.js
   ```
 
 3. Add the resource reference as decribed below.
@@ -58,7 +60,7 @@ If you configure Lovelace via YAML, add a reference to `midea-humidifier-card.js
 
   ```yaml
   resources:
-    - url: /hacsfiles/midea-humidifier-card.js?v=1.0.7
+    - url: /hacsfiles/midea-humidifier-card.js?v=1.0.9
       type: module
   ```
 
