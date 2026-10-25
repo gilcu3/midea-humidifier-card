@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import serve from 'rollup-plugin-serve';
 import json from '@rollup/plugin-json';
 import dotenv from 'dotenv';
+import guardRoundSlider from './rollup-plugin-guard-round-slider';
 
 const dev = process.env.ROLLUP_WATCH;
 dotenv.config();
@@ -22,6 +23,7 @@ const serveopts = {
 
 const plugins = [  
   nodeResolve({}),
+  guardRoundSlider(),
   commonjs(),
   typescript(),
   json(),

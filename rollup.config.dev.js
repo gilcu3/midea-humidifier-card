@@ -4,6 +4,7 @@ import babel from "rollup-plugin-babel";
 import serve from "rollup-plugin-serve";
 import { terser } from "rollup-plugin-terser";
 import json from '@rollup/plugin-json';
+import guardRoundSlider from './rollup-plugin-guard-round-slider';
 
 export default {
   input: ["src/midea-humidifier-card.ts"],
@@ -13,6 +14,7 @@ export default {
   },
   plugins: [
     resolve(),
+    guardRoundSlider(),
     typescript(),
     json(),
     babel({

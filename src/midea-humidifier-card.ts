@@ -34,7 +34,8 @@ import {
   mdiPowerCycle,
   mdiSnowflakeMelt
 } from "@mdi/js";
-// import "@thomasloven/round-slider";
+// Home Assistant stopped shipping <round-slider> in 2026.10, so bundle our own
+import "@thomasloven/round-slider";
 import { HassEntity, STATE_NOT_RUNNING } from "home-assistant-js-websocket";
 import { localize } from "./localize/localize";
 import {
